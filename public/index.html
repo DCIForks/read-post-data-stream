@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    .green {
+      background-color:#238636;
+      border-color:#238636;
+      border-radius:0.3em;
+      color:#fff
+    }
+  </style>
+  
+</head>
+<body>
+  <form
+    method="post"
+  >
+    <label for="who">
+      It was
+      <input type="text" name="who" id="who" value="Colonel Mustard">
+    </label>
+    <label for="how">
+      with the
+      <input type="text" name="how" id="how" value="Candlestick">
+    </label>
+    <label for="where">
+      in the
+      <input type="text" name="where" id="where" value="Kitchen">.
+    </label>
+    <br><br>
+    <button
+      type="submit"
+      formaction="/dont-treat"
+    >
+      Don't Treat Form
+    </button>
+    <button
+      type="submit"
+      formaction="/treat"
+      class="green"
+    >
+      Treat Form
+    </button>
+  </form>
+</body>
+</html>
